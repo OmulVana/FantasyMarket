@@ -24,40 +24,7 @@ React Router: Handles navigation and routing between different pages.
 CSS Modules: Provides scoped and modular CSS for component styling.
 Context API: Used for state management of the shopping cart system.
 React Player: Embeds videos on the home page for an immersive experience.
-Installation
-To run this project locally, follow these steps:
 
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/fantasy-market.git
-cd fantasy-market
-Install dependencies:
-
-bash
-Copy code
-npm install
-Start the development server:
-
-bash
-Copy code
-npm start
-Visit the app in your browser:
-
-arduino
-Copy code
-http://localhost:3000
-Project Structure
-bash
-Copy code
-/src
-  /components    # React components for product cards, cart, buttons, etc.
-  /contexts      # Context API for cart state management.
-  /assets        # Static assets like images.
-  /css           # CSS modules for styling individual components.
-  /pages         # Pages for product, home, cart, etc.
-  /magicItems.js # Data for the magical items available in the store.
   
 How It Works
 
