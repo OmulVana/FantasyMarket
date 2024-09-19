@@ -1,0 +1,44 @@
+.availableSection {
+  padding: 20px;
+  background-color: #c41e1e;
+}
+
+.availableSection h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center align items horizontally */
+  align-items: start; /* Align items to the start vertically */
+  padding: 20px;
+  background: #c41e1e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .productsGrid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .productsGrid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .productsGrid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for very small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .productsGrid {
+      grid-template-columns: 1fr; /* 1 column for extra small screens */
+  }
+}

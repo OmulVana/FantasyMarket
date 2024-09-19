@@ -1,0 +1,40 @@
+header {
+    background-color: #90ee90;
+    padding: 1rem;
+}
+
+.header-image {
+    height: 300px;
+    margin-right: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+#site-name {
+    font-size: 5rem;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,#069429, rgb(0, 26, 4));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

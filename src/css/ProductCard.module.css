@@ -1,0 +1,97 @@
+.productCard {
+    background: #d4cccc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: #df150e;
+    height: 350px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.2s;
+    overflow: hidden;
+    line-height: 19px;
+}
+
+.productCard:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.productImage {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.promoLogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.productName {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productCategory {
+    font-size: 1.0em;
+    margin: 5px 0;
+    color: #084799;
+    flex-shrink: 0;
+}
+
+.productPrice {
+    font-size: 1.1em;
+    color: #27ae60;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.buttonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.addToCartButton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.addToCartButton:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,31 @@
+.addToCartButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+.addToCartButton.promo {
+    background-color: #ffc107;
+    color: black;
+}
+
+.addToCartButton.promo:hover {
+    background-color: #4e00e0;
+    color: white;
+}
+
+
+.addToCartButton.productPage {
+    background-color:  #67a1d1;
+    color: black;
+}
+
+.addToCartButton.productPage:hover {
+    background-color:  #1126e6; 
+    color: white;
+}
