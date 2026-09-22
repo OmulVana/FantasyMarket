@@ -12,5 +12,6 @@ export default function ShopButton({ text }) {
     <button className={classes.shopButton} onClick={handleClick}>
       {text}
     </button>
+    // useless text
   )
 }
