@@ -1,0 +1,18 @@
+{
+  "name": "fantasy-market-e2e",
+  "private": true,
+  "version": "1.0.0",
+  "description": "End-to-end tests for Fantasy Market, kept separate from the React app",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

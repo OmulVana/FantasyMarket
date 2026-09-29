@@ -1,31 +1,38 @@
 .addToCartButton {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    transition: transform 0.15s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.addToCartButton:active {
+    transform: scale(0.97);
+}
 
 .addToCartButton.promo {
-    background-color: #ffc107;
-    color: black;
+    border: none;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    color: #1a1206;
+    box-shadow: 0 6px 18px rgba(212, 175, 55, 0.25);
 }
 
 .addToCartButton.promo:hover {
-    background-color: #4e00e0;
-    color: white;
+    background: linear-gradient(135deg, var(--arcane-light), var(--arcane));
+    color: #fff;
+    box-shadow: 0 6px 22px rgba(139, 92, 246, 0.45);
 }
 
-
 .addToCartButton.productPage {
-    background-color:  #67a1d1;
-    color: black;
+    border: 1px solid var(--border-strong);
+    background: transparent;
+    color: var(--gold-light);
 }
 
 .addToCartButton.productPage:hover {
-    background-color:  #1126e6; 
-    color: white;
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #1a1206;
 }

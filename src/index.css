@@ -1,18 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0e0a17;
+  --bg-soft: #151021;
+  --surface: #1c162b;
+  --surface-2: #251d38;
+  --border: rgba(212, 175, 55, 0.18);
+  --border-strong: rgba(212, 175, 55, 0.45);
+
+  --gold: #d4af37;
+  --gold-light: #f3d98b;
+  --gold-dark: #9c7a1c;
+  --arcane: #8b5cf6;
+  --arcane-light: #b69cff;
+  --danger: #ff7a7a;
+
+  --text: #ece6f5;
+  --text-muted: #a89fbd;
+
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body: 'Quicksand', system-ui, sans-serif;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --glow: 0 0 0 1px var(--border-strong), 0 12px 40px rgba(212, 175, 55, 0.15);
+  --container: 1200px;
+}
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: white;
-  color: #e1eeeb;
+  font-family: var(--font-body);
+  color: var(--text);
   min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(139, 92, 246, 0.14), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(212, 175, 55, 0.08), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
 }
 
 .center {
   text-align: center;
+}
+
+.pageSection {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  color: var(--gold-light);
+  text-align: center;
+  margin: 0 0 2rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: 0.75rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
