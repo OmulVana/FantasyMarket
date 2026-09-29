@@ -1,14 +1,21 @@
 .checkout {
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .checkout h1 {
-    color: #333;
-  }
-  
-  .checkout p {
-    color: #555;
-  }
+  width: calc(100% - 2.5rem);
+  max-width: 640px;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, var(--surface-2), var(--surface));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.checkout h1 {
+  margin: 0 0 1rem;
+  color: var(--gold-light);
+}
+
+.checkout p {
+  margin: 0;
+  color: var(--text-muted);
+}

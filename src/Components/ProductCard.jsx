@@ -16,14 +16,18 @@ export default function ProductCard({ product, isPromo }) {
         e.stopPropagation();
     };
     return (
-        <div className={styles.productCard} onClick={handleCardClick}>
-            {isPromo && <img src={promoImage} alt="Promo" className={styles.promoLogo} />}
-            <img src={product.image} alt={product.name} className={styles.productImage} />
-            <h3 className={styles.productName}>{product.name}</h3>
-            <h3 className={styles.productCategory}>{product.category}</h3>
-            <p className={styles.productPrice}>{product.price}</p>
-            <div className={styles.buttonWrapper}>
-                <AddToCartButton item={product} context={isPromo ? 'promo' : 'productPage'} onClick={handleButtonClick} />
+        <div className={`${styles.productCard} ${isPromo ? styles.promo : ''}`} onClick={handleCardClick}>
+            <div className={styles.imageWrapper}>
+                {isPromo && <img src={promoImage} alt="Promo" className={styles.promoLogo} />}
+                <img src={product.image} alt={product.name} className={styles.productImage} />
+            </div>
+            <div className={styles.cardBody}>
+                <span className={styles.productCategory}>{product.category}</span>
+                <h3 className={styles.productName}>{product.name}</h3>
+                <p className={styles.productPrice}>{product.price} <span>Gold</span></p>
+                <div className={styles.buttonWrapper}>
+                    <AddToCartButton item={product} context={isPromo ? 'promo' : 'productPage'} onClick={handleButtonClick} />
+                </div>
             </div>
         </div>
     )

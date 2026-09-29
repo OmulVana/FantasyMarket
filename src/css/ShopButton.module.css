@@ -1,17 +1,25 @@
 .shopButton {
-  background-color: #32cd32; 
-  color: white;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold) 50%, var(--gold-dark));
+  color: #1a1206;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
+  padding: 0.95rem 2.2rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  margin-top: 1rem; 
-  }
-  
-  .shopButton:hover {
-    background-color: #228b22;
-  }
-  
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.shopButton:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 14px 40px rgba(212, 175, 55, 0.45);
+}
+
+.shopButton:active {
+  transform: translateY(0);
+}
