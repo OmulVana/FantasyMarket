@@ -1,9 +1,9 @@
 import "../css/Header.css";
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import marketImage from "../assets/Market.webp";
 import { useAuth } from "../AuthContext";
 import { useCart } from "../CartContext";
+import AuthButton from "./AuthButton";
 
 export default function Header() {
   const { user } = useAuth();
@@ -27,6 +27,7 @@ export default function Header() {
           {user && user.role === "Vendor" && (
             <NavLink to="/vendor-dashboard">Vendor Dashboard</NavLink>
           )}
+          <AuthButton />
         </nav>
       </div>
     </header>
