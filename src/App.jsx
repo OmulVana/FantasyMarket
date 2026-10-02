@@ -27,7 +27,7 @@ function AppContent() {
     <>
       {shouldShowHeaderFooter && <Header />}
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/products" element={<ProductListPage />} />

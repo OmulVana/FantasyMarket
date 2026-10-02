@@ -4,7 +4,7 @@ import styles from '../css/CartPage.module.css';
 import { useNavigate } from 'react-router-dom';
 
 export default function CartPage() {
-    const { cartItems } = useCart();
+    const { cartItems, removeFromCart } = useCart();
     const navigate = useNavigate();
 
     const handleCheckout = () => {
@@ -34,6 +34,9 @@ export default function CartPage() {
                             <p>{item.description}</p>
                             <p className={styles.price}>{item.price} Gold</p>
                         </div>
+                        <button onClick={() => removeFromCart(item.id)} className={styles.removeButton}>
+                            Remove
+                        </button>
                     </div>
                 ))}
             </div>
